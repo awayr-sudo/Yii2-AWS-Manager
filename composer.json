@@ -1,0 +1,22 @@
+{
+    "name": "awayr/aws-man",
+    "description": "Yii2 based wrapper for AWS APIs.",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","aws","awayr","sdk"," aws sdk"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AWAYR",
+            "email": "hello@awayr.net"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "aws/aws-sdk-php-resources": ">=0.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "awayr\\aws\\": "src"
+        }
+    }
+}
