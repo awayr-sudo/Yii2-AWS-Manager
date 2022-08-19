@@ -1,8 +1,18 @@
 {
     "name": "awayr/aws-man",
-    "description": "Yii2 based wrapper for AWS APIs.",
+    "description": "Yii2 AWS Manager, An AWS APIs based wrapper built as Yii2 component. An extension to the AWS SDK for PHP for interacting with AWS services using resource-oriented objects.",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension","aws","awayr","sdk"," aws sdk"],
+    "keywords": [
+        "yii2",
+        "extension",
+        "aws",
+        "sdk",
+        "aws-sdk",
+        "wrapper",
+        "helper",
+        "component",
+        "awayr"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -18,5 +28,11 @@
         "psr-4": {
             "awayr\\aws\\": "src"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }
