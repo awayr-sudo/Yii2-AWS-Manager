@@ -1,3 +1,11 @@
+<p align="center">
+    <a href="https://github.com/awayr-sudo" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/55288049" height="200px">
+    </a>
+    <h1 align="center">Cashier Extension for Yii 2 (Ported By Famous Yii2 Cashier [yii2mod/cashier]). Implemented with Latest Updates.</h1>
+    <br>
+</p>
+
 Yii2 AWS Manager
 ====
 Yii2 AWS Manager, An AWS Resource APIs based wrapper built as Yii2 component. An extension to the AWS SDK for PHP for interacting with AWS services using resource-oriented objects. 
