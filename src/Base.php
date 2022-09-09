@@ -3,7 +3,7 @@
 /**
  * @author AWAYR <hello@awayr.net>
  * @link https://awayr.net
- * 
+ *
  */
 
 namespace awayr\aws;
@@ -24,7 +24,7 @@ class Base extends Component
     public $key;
     public $secret;
     public $region;
-    public $version = 'latest'; 
+    public $version = 'latest';
     public $configFile = false;
 
     private $_config;
@@ -51,7 +51,11 @@ class Base extends Component
                 'key' => $this->key,
                 'secret' => $this->secret,
                 'region' => $this->region,
-                'version' => $this->version
+                'version' => $this->version,
+                'credentials' => [
+                    'key' => $this->key,
+                    'secret'  => $this->secret,
+                  ]
             ];
         } else {
             if (!file_exists($this->configFile)) {
@@ -77,19 +81,20 @@ class Base extends Component
 
     /**
      * @param mixed $key
-     * 
+     *
      * @return [type]
      */
-    public function use($key){
+    public function use($key)
+    {
         $this->getAws();
         return $this->_aws->$key;
     }
     public function __call($method, $params)
     {
-        echo $method; print_r($params);
         $client = $this->getAws()->$method;
-        if($client)
+        if ($client) {
             return $client;
+        }
         // if (method_exists($client, $method))
         //     return call_user_func_array(array($client, $method), $params);
 
